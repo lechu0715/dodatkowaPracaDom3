@@ -22,16 +22,26 @@ namespace porównywanieLiczb
                 -Dla parametrów 2121212121 oraz 131313 zostanie zwrócone 'false'
             */
 
-            Console.WriteLine("Podaj 2 liczby aby je porównać.\nPodaj pierwszą liczbę:");
+            try
+            {
+                Console.WriteLine("Podaj 2 liczby aby je porównać.\nPodaj pierwszą liczbę:");
 
-            var number1 = int.Parse(Console.ReadLine());
-            
-            Console.WriteLine("podaj druga liczbę:");
+                var number1 = int.Parse(Console.ReadLine());
 
-            var number2 = int.Parse(Console.ReadLine());
+                Console.WriteLine("podaj druga liczbę:");
 
-            Console.WriteLine(CompareNumbers(number1, number2));
-            Console.ReadLine();
+                var number2 = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(CompareNumbers(number1, number2));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                Console.ReadLine();
+            }
 
         }
 
