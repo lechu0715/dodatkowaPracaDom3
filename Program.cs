@@ -53,7 +53,7 @@ namespace porównywanieLiczb
             List<int> secondNumbers = new List<int>();
 
             
-            int z = 0;
+            
             int k = 0;
             while (k < text1.Length - 2)
             {
@@ -67,14 +67,13 @@ namespace porównywanieLiczb
                 if (a == b && b == c)
                 {
                     firstNumbers.Add(c);
-                    z++;
                 }
 
                 k++;
             }
 
 
-            int x = 0;
+            
             int n = 0;
 
             
@@ -88,7 +87,6 @@ namespace porównywanieLiczb
                 if (d == e)
                 {
                     secondNumbers.Add(d);
-                    x++;
                 }
 
                 n++;
